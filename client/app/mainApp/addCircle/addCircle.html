@@ -1,0 +1,19 @@
+<div class="pageBox">
+
+  <form class="form" name="form" ng-submit="vm.addCircle(form)" novalidate>
+
+    <div class="form-group">
+      <label>Nazwa</label>
+      <input type="text" name="username" class="form-control" ng-model="vm.circle.name" required>
+    </div>
+    <div class="form-group">
+      <div class="btn-group">
+        <label class="btn btn-primary" ng-model="vm.circle.isPublic" uib-btn-radio="true">Publiczny</label>
+        <label class="btn btn-primary" ng-model="vm.circle.isPublic" uib-btn-radio="false">Prywatny</label>
+      </div>
+    </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-success">Wyślij</button>
+    </div>
+  </form>
+</div>

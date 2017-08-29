@@ -1,0 +1,29 @@
+<a href ng-click="vm.leaveCircle()" class="circlesList-heading circleUserList-removeCircle margin-0">
+  <i class="fa fa-times margin-right-10" aria-hidden="true"></i>
+  Opuść krąg
+</a>
+<a ui-sref="main.addUserToCircle({circleId: vm.circleId})" ng-show="vm.isAdmin" class="circlesList-heading margin-0">
+  <i class="fa fa-plus margin-right-10" aria-hidden="true"></i>
+  Dodaj użytkownika
+</a>
+
+<div class="circlesList-heading margin-0">
+  <i class="fa fa-user margin-right-10" aria-hidden="true"></i>
+  Użytkownicy kręgu:
+</div>
+
+<div class="circleUsersList">
+  <ul class="list-unstyled">
+    <li ng-repeat="user in vm.users" class="circleUsersList-item">
+      <div>
+        <i class="fa fa-circle-o margin-right-10" aria-hidden="true"></i>
+        <span ng-bind="user.username"></span>
+      </div>
+      <div class="text-right" ng-show="vm.isAdmin">
+        <a ng-click="vm.deleteUser(user.id)">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

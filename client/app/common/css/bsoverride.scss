@@ -1,0 +1,22 @@
+$navbar-default-bg: #b84476 !default;
+
+.navbar-default {
+  //  background-image: none !important;
+  box-shadow: none !important;;
+  background: #b84476; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #b84476 0%, #0d2c5a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #b84476 0%, #0d2c5a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #b84476 0%, #0d2c5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b84476', endColorstr='#0d2c5a', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+  height: auto;
+  border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin: 13px 5px;
+  text-shadow: none;
+}

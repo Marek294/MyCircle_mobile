@@ -1,0 +1,27 @@
+<div class="circlesList">
+
+  <h5 class="circlesList-heading">
+    <i class="fa fa-search margin-right-10" aria-hidden="true"></i>
+    Wyszukaj kręgi:</h5>
+  <input class="form-control full-width" type="text">
+
+  <a ui-sref=".addCircle" class="circlesList-heading">
+    <i class="fa fa-plus-square margin-right-10" aria-hidden="true"></i>
+    Dodaj krąg
+  </a>
+
+  <div href class="circlesList-heading margin-0">
+    <i class="fa fa-list-ul margin-right-10" aria-hidden="true"></i>
+    Dostępne kręgi:
+  </div>
+  <ul class="list-unstyled circlesList-list">
+
+    <li ng-repeat="circle in vm.circles">
+      <a ui-sref="main.showCirclePost({circleId:circle.id})">
+        <i class="fa fa-circle-o margin-right-10" aria-hidden="true"></i>
+        <span ng-bind="circle.name"></span>
+      </a>
+    </li>
+  </ul>
+
+</div>

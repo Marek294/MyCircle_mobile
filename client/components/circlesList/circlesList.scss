@@ -1,0 +1,23 @@
+.circlesList {
+  background: #fff;
+  border: 1px solid #eae9e9;
+  padding: 20px;
+}
+
+.circlesList-heading {
+  font-size: 16px;
+  display: block;
+  &:not(:first-child) {
+    margin-top: 25px;
+  }
+}
+
+.circlesList-list {
+  margin-top: 10px;
+  span {
+    color: $text-color;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}

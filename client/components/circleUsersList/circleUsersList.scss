@@ -1,0 +1,14 @@
+.circleUsersList {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+
+.circleUsersList-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circleUserList-removeCircle {
+  color: #c62020;
+}

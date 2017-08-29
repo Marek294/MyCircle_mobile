@@ -1,0 +1,123 @@
+$icon-font-path: '/assets/fonts/bootstrap/';
+
+//@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'common/css/bootstrap/bootstrap';
+$fa-font-path: '/assets/fonts/font-awesome/';
+
+@import '~font-awesome/scss/font-awesome';
+@import 'common/css/common';
+@import 'common/css/bsoverride';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900|Roboto:300,500,700,900);
+
+/**
+ * App-wide Styles
+ */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// Component styles are injected through gulp
+/* inject:scss */
+@import 'admin/admin';
+@import 'common/css/bootstrap/bootstrap-compass';
+@import 'common/css/bootstrap/bootstrap-mincer';
+@import 'common/css/bootstrap/bootstrap-sprockets';
+@import 'common/css/bootstrap/bootstrap';
+@import 'common/css/bootstrap/bootstrap/alerts';
+@import 'common/css/bootstrap/bootstrap/badges';
+@import 'common/css/bootstrap/bootstrap/breadcrumbs';
+@import 'common/css/bootstrap/bootstrap/button-groups';
+@import 'common/css/bootstrap/bootstrap/buttons';
+@import 'common/css/bootstrap/bootstrap/carousel';
+@import 'common/css/bootstrap/bootstrap/close';
+@import 'common/css/bootstrap/bootstrap/code';
+@import 'common/css/bootstrap/bootstrap/component-animations';
+@import 'common/css/bootstrap/bootstrap/dropdowns';
+@import 'common/css/bootstrap/bootstrap/forms';
+@import 'common/css/bootstrap/bootstrap/glyphicons';
+@import 'common/css/bootstrap/bootstrap/grid';
+@import 'common/css/bootstrap/bootstrap/input-groups';
+@import 'common/css/bootstrap/bootstrap/jumbotron';
+@import 'common/css/bootstrap/bootstrap/labels';
+@import 'common/css/bootstrap/bootstrap/list-group';
+@import 'common/css/bootstrap/bootstrap/media';
+@import 'common/css/bootstrap/bootstrap/mixins';
+@import 'common/css/bootstrap/bootstrap/modals';
+@import 'common/css/bootstrap/bootstrap/navbar';
+@import 'common/css/bootstrap/bootstrap/navs';
+@import 'common/css/bootstrap/bootstrap/normalize';
+@import 'common/css/bootstrap/bootstrap/pager';
+@import 'common/css/bootstrap/bootstrap/pagination';
+@import 'common/css/bootstrap/bootstrap/panels';
+@import 'common/css/bootstrap/bootstrap/popovers';
+@import 'common/css/bootstrap/bootstrap/print';
+@import 'common/css/bootstrap/bootstrap/progress-bars';
+@import 'common/css/bootstrap/bootstrap/responsive-embed';
+@import 'common/css/bootstrap/bootstrap/responsive-utilities';
+@import 'common/css/bootstrap/bootstrap/scaffolding';
+@import 'common/css/bootstrap/bootstrap/tables';
+@import 'common/css/bootstrap/bootstrap/theme';
+@import 'common/css/bootstrap/bootstrap/thumbnails';
+@import 'common/css/bootstrap/bootstrap/tooltip';
+@import 'common/css/bootstrap/bootstrap/type';
+@import 'common/css/bootstrap/bootstrap/utilities';
+@import 'common/css/bootstrap/bootstrap/variables';
+@import 'common/css/bootstrap/bootstrap/wells';
+@import 'common/css/bootstrap/bootstrap/mixins/alerts';
+@import 'common/css/bootstrap/bootstrap/mixins/background-variant';
+@import 'common/css/bootstrap/bootstrap/mixins/border-radius';
+@import 'common/css/bootstrap/bootstrap/mixins/buttons';
+@import 'common/css/bootstrap/bootstrap/mixins/center-block';
+@import 'common/css/bootstrap/bootstrap/mixins/clearfix';
+@import 'common/css/bootstrap/bootstrap/mixins/forms';
+@import 'common/css/bootstrap/bootstrap/mixins/gradients';
+@import 'common/css/bootstrap/bootstrap/mixins/grid-framework';
+@import 'common/css/bootstrap/bootstrap/mixins/grid';
+@import 'common/css/bootstrap/bootstrap/mixins/hide-text';
+@import 'common/css/bootstrap/bootstrap/mixins/image';
+@import 'common/css/bootstrap/bootstrap/mixins/labels';
+@import 'common/css/bootstrap/bootstrap/mixins/list-group';
+@import 'common/css/bootstrap/bootstrap/mixins/nav-divider';
+@import 'common/css/bootstrap/bootstrap/mixins/nav-vertical-align';
+@import 'common/css/bootstrap/bootstrap/mixins/opacity';
+@import 'common/css/bootstrap/bootstrap/mixins/pagination';
+@import 'common/css/bootstrap/bootstrap/mixins/panels';
+@import 'common/css/bootstrap/bootstrap/mixins/progress-bar';
+@import 'common/css/bootstrap/bootstrap/mixins/reset-filter';
+@import 'common/css/bootstrap/bootstrap/mixins/reset-text';
+@import 'common/css/bootstrap/bootstrap/mixins/resize';
+@import 'common/css/bootstrap/bootstrap/mixins/responsive-visibility';
+@import 'common/css/bootstrap/bootstrap/mixins/size';
+@import 'common/css/bootstrap/bootstrap/mixins/tab-focus';
+@import 'common/css/bootstrap/bootstrap/mixins/table-row';
+@import 'common/css/bootstrap/bootstrap/mixins/text-emphasis';
+@import 'common/css/bootstrap/bootstrap/mixins/text-overflow';
+@import 'common/css/bootstrap/bootstrap/mixins/vendor-prefixes';
+@import 'common/css/bsoverride';
+@import 'common/css/common';
+@import 'common/css/pageBoxes';
+@import 'mainApp/main';
+@import 'mainApp/showCirclePosts/showCirclePosts';
+@import 'welcome/welcome';
+@import '../components/circlesList/circlesList';
+@import '../components/circleUsersList/circleUsersList';
+@import '../components/footer/footer';
+@import '../components/modal/modal';
+/* endinject */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}

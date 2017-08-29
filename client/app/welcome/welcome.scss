@@ -1,0 +1,51 @@
+#welcome {
+  margin-top: -100px;
+  margin-bottom:-70px;
+  width: 100%;
+  height: 100vh;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b84476+0,0d2c5a+100 */
+  background: #b84476; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #b84476 0%, #0d2c5a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #b84476 0%, #0d2c5a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #b84476 0%, #0d2c5a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b84476', endColorstr='#0d2c5a', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.welcomeRow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.welcomeImage {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.welcomeImage-image {
+  max-width: 180px;
+}
+
+.welcomeForm {
+  background: white;
+  padding: 30px;
+  min-width: 30%;
+  text-align: center;
+
+}
+
+.welcomeForm-title {
+  margin-top: 0;
+}
+
+.welcomeButtons {
+  margin-top: 25px;
+}
+
+.loginForm {
+  margin-top: 30px;
+}

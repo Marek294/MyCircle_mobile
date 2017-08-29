@@ -1,0 +1,39 @@
+<div class="circlePostList">
+  <div class="circlePost circlePostAdd" ng-show="vm.circleId">
+    <form class="form" name="form" ng-submit="vm.addPost(form)" novalidate>
+
+      <div class="form-group">
+        <label>Tytuł</label>
+
+        <input type="text" name="title" class="form-control" ng-model="vm.post.title" required>
+      </div>
+      <div class="form-group">
+        <label>Treść</label>
+
+        <textarea type="text" style="height:200px" name="content" class="form-control" ng-model="vm.post.content"
+                  required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">Wyślij</button>
+      </div>
+    </form>
+  </div>
+  <div infinite-scroll="vm.getPosts(vm.PAGE)" infinite-scroll-distance="0"
+       infinite-scroll-disabled='!vm.remainingPages'>
+    <div class="circlePost" ng-repeat="post in vm.circlePosts | orderBy: 'created_at':true">
+      <h3 ng-bind="post.title"></h3>
+      <p ng-bind="post.content"></p>
+      <div class="text-right">
+        <small ng-bind="post.username"></small>
+      </div>
+      <div class="text-right">
+        <small>{{post.created_at| date:"MM/dd/yyyy '' h:mma"}}</small>
+      </div>
+    </div>
+    <div ng-show="!vm.circlePosts.length">
+      <h2 class="text-center">Brak postów :(</h2>
+    </div>
+  </div>
+</div>
+
+
